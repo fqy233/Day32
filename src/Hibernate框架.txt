@@ -1,0 +1,30 @@
+Hibernate框架
+	ORM:
+		O:object（对象）
+		R:Realtion（关系）
+		M:Mapping（映射）
+	
+	开发步骤:
+		1.下载源码
+			hibernate-distribution-3.6.0.Final-dist
+		
+		2.引入jar包
+			1）hibernate3.jar
+			2）required目录下：
+				antlr-2.7.6.jar
+				commons-collections-3.1.jar
+				dom4j-1.6.1.jar
+				javassist-3.12.0.GA.jar
+				jta-1.1.jar、slf4j-api-1.6.1.jar
+				slf4j-api-1.6.1.jar
+			3)jpa目录下：
+				hibernate-jpa-2.0-api-1.0.0.Final.jar
+			4）mysql驱动包
+		
+		3.编写对象及对象映射
+			Employee.java 		对象
+			Employee.hbm.xml	对象的映射
+			
+		4.src中编写hibernate.cfg.xml，写入数据库连接配置，加载所有映射
+			
+			
